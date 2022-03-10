@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Raleway, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+p {
+    text-align: justify;
+    line-height: 30px;
+}
+
+header {
+    display: inline;
+}
+.jumbotron {
+    font-size: 20px;
+    padding: 40px;
+    background-color: #ccd2ee;
+    text-align: center;
+    color: #424874;
+}
+nav {
+    background-color: rgba(166,177,225);
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin: 20px;
+}
+nav li a {
+    font-size: 18px;
+    font-weight: normal;
+    text-decoration: none;
+    color: white;
+}
+nav li a:hover {
+    color: #424874;
+    font-weight: bolder;
+    padding: 15px;
+    border-bottom: 5px solid rgba(66,72,116);
+}
+nav li a:active {
+    color: #C84361;
+}
+
+main {
+    overflow: auto;
+}
+.container {
+    max-width: 800px;
+    margin: 20px;
+}
+.content-card {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+.content-card:hover {
+    border: 1px solid lightsteelblue;
+    box-shadow: -10px 10px 0px 0px rgba(21,25,89,1);
+    cursor: pointer;
+}
+
+.content-image {
+    max-width: 400px;
+    object-fit: cover;
+    object-position: center;
+    margin: 0 auto;
+    display: block;
+}
+
+.btn {
+    border: 1px solid #424874;
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+.btn:hover {
+    background-color: #424874;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.title {
+    color: #424874;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 30px;
+    margin-top: 20px;
+}
+.title p {
+    font-size: 15px;
+    text-align: center;
+    color: black;
+}
+.title span {
+    color: red;
+}
+
+.home h2 {
+    color: #424874;
+}
+
+.course {
+    display: flex;
+    flex-direction: row;
+}
+
+.lesson p {
+    padding-top: 10px;
+}
+
+input[type=text], [type=email], textarea {
+    font-family: Raleway, sans-serif;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #c2c2c2;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    resize: vertical;
+}
+button[type=submit] {
+    width: 300px;
+    background-color: #ffffff;
+    padding: 12px 20px;
+    border: 1px solid #424874;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button[type=submit]:hover {
+    background-color: #424874;
+    color: #ffffff;
+}
+
+.aside-card {
+    padding: 20px;
+    margin: 50px 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 10px rgba(205,213,247,1);
+}
+aside .profile-image {
+    width: 100%;
+    border-radius: 20px;
+    border: 3px solid #424874;
+    object-fit: cover;
+    object-position: center;
+}
+aside header h1, aside header p, figure {
+    text-align: center;
+}
+aside header, th {
+    color: #424874;
+}
+aside th, td {
+    padding-bottom: 10px;
+}
+
+aside {
+    float: right;
+    width: 30%;
+    text-align: left;
+}
+#content {
+    float: left;
+    width: 70%;
+}
+
+footer {
+    background-color: #424874;
+    color: #ffffff;
+    padding: 30px;
+    margin-top: 50px;
+}
+footer>p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 700px) {
+
+    #content, aside {
+        width: 100%;
+        height: auto;
+    }
+    .content-image {
+        max-width: 100%;
+        height: auto;
+    }
+    .course {
+        max-width: 100%;
+        display: block;
+        margin-bottom: 30px;
+    }
+    button[type=submit] {
+        width: 100%;
+    }
+}

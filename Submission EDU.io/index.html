@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edu.io</title>
+
+    <link rel="stylesheet" href="assets/style/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="jumbotron">
+            <h1>EDU.io</h1>
+            <h2>A trusted learning platform to provide education in a fun way.</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#course">Course</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="content">
+            <!-- Membuat article home -->
+            <article id="home" class="home container">
+                <h1 class="title">Study with EDU.io</h1>
+                <img src="assets/img/img2.svg" class="content-image" alt="edu.io">
+                <p>
+                    At EDU.io, we prioritize a fun but quality learning process. Our teachers are experienced people in
+                    their fields. Enjoy a fun learning process with videos, materials, quizzes, challenges and get
+                    rewarded for accumulated points!
+                </p>
+                <h2>Download Our Apps</h2>
+                <p>
+                    Make your learning easy by downloading our app on your smartphone. By downloading the application,
+                    you can study anywhere and anytime.
+                </p>
+                <button class="btn"><i class="fa fa-download"></i> Download</button>
+            </article>
+
+            <!-- Membuat article course -->
+            <article id="course" class="title container">
+                <h1 class="title">Our Available Course</h1>
+                <img src="assets/img/img3.svg" class="content-image" alt="edu.io">
+                <p>
+                    All of our courses are designed to be suitable for beginners <br>
+                    so <span>you don't have to be afraid</span> to start learning.
+                </p>
+            </article>
+
+            <article class="course container">
+                <section class="first lesson content-card">
+                    <h1>UI/UX Designer</h1>
+                    <p>
+                        The curriculum in this class is designed to meet the needs of today's industry by combining
+                        technical skills and developing a design mindset.
+                    </p>
+                </section>
+
+                <section class="second lesson content-card">
+                    <h1>Fullstack Developer</h1>
+                    <p>
+                        This class is designed in a structured manner and adapts to industrial needs. You will learn
+                        HTML, CSS, JavaScript, PostgreSQL, Node.js, to git and GitHub.
+                    </p>
+                </section>
+
+                <section class="third lesson content-card">
+                    <h1>Digital Marketing</h1>
+                    <p>
+                        In this class you will be taught the application of digital marketing and see and determine
+                        which digital marketing media is suitable to be applied to a business.
+                    </p>
+                </section>
+
+            </article>
+
+            <!-- Membuat Form Contact Us -->
+            <div id="contact-us" class="container">
+                <form action="" method="post">
+                    <h1 class="title">Contact Us</h1>
+                    <img src="assets/img/img5.svg" class="content-image" alt="contact-us">
+
+                    <label for="fullname">Fullname</label>
+                    <input type="text" name="fullname" id="fullname" placeholder="Enter your fullname..." required>
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email..." required>
+
+                    <label for="messages">Messages</label>
+                    <textarea name="messages" id="messages" placeholder="Tell us what you think..." required></textarea>
+
+                    <button id="submit" type="submit">Send</button>
+                </form>
+            </div>
+
+        </div>
+
+        <!-- Membuat biodata penulis -->
+        <aside>
+            <article class="profile aside-card">
+                <header>
+                    <h1>MEET OUR CEO</h1>
+                    <figure>
+                        <img src="assets/img/profile.jpg" class="profile-image" alt="profile">
+                        <p>EDU.io CEO</p>
+                    </figure>
+                </header>
+                <section>
+                    <h3>Information</h3>
+                    <table>
+                        <tr>
+                            <th>Fullname</th>
+                            <td>Surya Rosauli Pasaribu</td>
+                        </tr>
+
+                        <tr>
+                            <th>Born</th>
+                            <td>August 15th, 2001</td>
+                        </tr>
+
+                        <tr>
+                            <th>Job</th>
+                            <td>Student</td>
+                        </tr>
+
+                        <tr>
+                            <th>From</th>
+                            <td>Gresik, Jawa Timur</td>
+                        </tr>
+                    </table>
+                </section>
+            </article>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Surya Rosauli Pasaribu</p>
+        <p>Belajar Dasar Pemrograman Web &copy; 2022, Dicoding Academy</p>
+    </footer>
+
+    <script src="assets/js/button.js"></script>
+</body>
+
+</html>
